@@ -24,7 +24,7 @@ public class BuildScript
         BuildPlayerOptions options = new BuildPlayerOptions
         {
             scenes = scenePaths,
-            locationPathName = "C:/Users/Kaiden Richardson/Downloads/tmp",
+            locationPathName = "D:/UnityEngine/CICDTest/BuildOutput",
             target = BuildTarget.WebGL,
             options = BuildOptions.None
         };
