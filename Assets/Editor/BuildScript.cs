@@ -6,18 +6,19 @@ public class BuildScript
 {
     private static void BuildWebGL()
     {
-        // EditorUserBuildSettings.selectedBuildTargetGroup = BuildTargetGroup.WebGL;
-        // EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
-        // string[] scenePaths = new string[scenes.Length];
-        // for(int i = 0; i < scenePaths.Length; i++)
-        // {
-        //     scenePaths[i] = scenes[i].path;
-        // }
-
-        string[] scenePaths = new string[]
+        EditorUserBuildSettings.selectedBuildTargetGroup = BuildTargetGroup.WebGL;
+        EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
+        string[] scenePaths = new string[scenes.Length];
+        for(int i = 0; i < scenePaths.Length; i++)
         {
-            "Assets/Scenes/SampleScene.unity"
-        };
+            Debug.Log("Adding scene " + scenes[i].path);
+            scenePaths[i] = scenes[i].path;
+        }
+
+        // string[] scenePaths = new string[]
+        // {
+        //     "Assets/Scenes/SampleScene.unity"
+        // };
 
         Debug.Log("Started we have logs");
 
